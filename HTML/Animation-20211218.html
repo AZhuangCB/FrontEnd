@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Document</title>
+        <style>
+            .body{
+                margin: 0;
+            }
+            .peas{
+                margin-top: 100px ;
+                width: 200px;
+                height:  200px;
+                border-radius: 100px 100px 100px 100px;
+                animation: peas 1s linear infinite;
+            }
+            @keyframes peas{
+                0%{ box-shadow: 
+                    300px 0 0 -80px green,
+                    450px 0 0 -80px green,
+                    600px 0 0 -80px green,
+                    750px 0 0 -80px green;
+                }            
+                100%{
+                    box-shadow: 
+                    150px 0 0 -80px green,
+                    300px 0 0 -80px green,
+                    450px 0 0 -80px green,
+                    600px 0 0 -80px green;                    
+                }
+            }
+            .top,.bottom{
+                margin-left: 150px;
+                background-color: yellow;
+                width: 200px;
+                height: 100px;
+            }
+            .top{
+                border-radius: 100px 100px 0 0;
+                animation: topmouth 1s linear infinite;
+            }
+            .bottom{
+                border-radius: 0 0 100px 100px;
+                animation: bottommouth 1s linear infinite;
+            }
+            @keyframes topmouth{
+                0%{
+                    transform: rotate(-25deg);
+                }
+                50%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(-25deg);
+                }
+            }
+            @keyframes bottommouth{
+                0%{
+                    transform: rotate(25deg);
+                }
+                50%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(25deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="peas">
+            <div class="top"></div>
+            <div class="bottom"></div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+1..class--类选择器
+2.CSS动画
+@keyframes peas{
+        0%{ box-shadow: 
+            300px 0 0 -80px green,
+            450px 0 0 -80px green,
+            600px 0 0 -80px green,
+            750px 0 0 -80px green;
+        }            
+        100%{
+            box-shadow: 
+            150px 0 0 -80px green,
+            300px 0 0 -80px green,
+            450px 0 0 -80px green,
+            600px 0 0 -80px green;                    
+        }
+    }
+
+ 3.animation: peas 1s linear infinite;
+ 给标签添加动画（动画名称，持续时间，速度，循环次数）
+ 4.border-radius: 100px 100px 100px 100px;
+ 圆角（分别四个角上的圆角的圆半径，顺时针方向）
+5.transform: rotate(-25deg);
+过渡，rotate（参数：旋转角度）
