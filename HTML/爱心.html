@@ -1,0 +1,64 @@
+<!-- 网页模板代码 快捷键(!+enter) -> 基本结构 注释(解释)(ctrl+/) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 头部标签 存放网页的基本信息 -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- 标题标签 -->
+        <title>爱心跳动特效-发发老师</title>
+        <!-- 装饰标签 存放标签的装饰内容(CSS -> 层叠样式表) -->
+        <style>
+            /* 选择到需要装饰的标签 */
+            /* 标签选择器 标签名称{} 默认样式 */
+            body{
+                /* 外边距  */
+                margin: 0;
+                background-color: #000;
+            }
+            /* class(类)选择器 .class名称{}  */
+            .heart{
+                /* 宽度:200(px 单位 像素); */
+                width: 200px;
+                /* 高度:200px; */
+                height: 200px;
+                margin: 150px auto;
+                animation: beat .7s linear infinite alternate;
+            }
+            @keyframes beat{
+                0%{
+                    transform: scale(1);    
+                }
+                100%{
+                    transform: scale(1.1);
+                }
+            }
+            .left,.right{
+                /* 浮动(横排) left向左(从左至右) */
+                float: left;
+                width: 100px;
+                height: 160px;
+                background-color: #f99;
+                /* 圆角 顺时针 左上 右上 右下 左下 */
+                border-radius: 50px 50px 0 0;
+                /* 阴影 横向 纵向 模糊半径 颜色 */
+                box-shadow: 0px 0px 30px #f99;
+            }
+            .left{
+                /* CSS3变换: 位移 旋转 度数deg 逆时针 */
+                transform: translateX(29px) rotate(-45deg);
+            }
+            .right{
+                transform: translateX(-29px) rotate(45deg);
+            }
+        </style>
+    </head>
+    <!-- 身体标签 存放给用户看的内容区域 -->
+    <body>
+        <!-- 盒子标签 矩形区域 大小(宽高) 标签区分 命名(class(类名)名称) 命名规范化 英文单词 见名知意 -->
+        <div class="heart">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>
