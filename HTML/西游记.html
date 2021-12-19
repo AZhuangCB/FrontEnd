@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body{
+                margin: 0;
+                background-image: url("images/bac.webp");
+                background-repeat: no-repeat;
+            }
+            .foot{
+                margin: 300px auto;
+                width: 760px;
+                height: 240px;
+            }
+            .role{
+                float: left;
+                width: 190px;
+                height: 240px;
+                background-repeat:no-repeat ;
+                background-position-y: center;
+            }
+            .role1{
+                background-image: url("images/west_01.png");
+                animation: role1Frames 1s steps(8) infinite;
+            }
+            .role2{
+                background-image: url("images/west_02.png");
+                animation: role2Frames 1s steps(8) infinite;
+            }
+            .role3{
+                background-image: url("images/west_03.png");
+                animation: role3Frames 1s steps(8) infinite;
+            }
+            .role4{
+                background-image: url("images/west_04.png");
+                animation: role4Frames 1s steps(8) infinite;
+            }
+            @keyframes role1Frames{
+                0%{
+                    background-position-x: 0px;
+                }
+                100%{
+                    background-position-x: -1600px;
+                }
+            }
+            @keyframes role2Frames{
+                0%{
+                    background-position-x: 0px;
+                }
+                100%{
+                    background-position-x: -1600px;
+                }
+            }
+            @keyframes role3Frames{
+                0%{
+                    background-position-x: 0px;
+                }
+                100%{
+                    background-position-x: -1360px;
+                }
+            }
+            @keyframes role4Frames{
+                0%{
+                    background-position-x: 0px;
+                }
+                100%{
+                    background-position-x: -1680px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="foot">
+            <div class="role role1"></div>
+            <div class="role role2"></div>
+            <div class="role role3"></div>
+            <div class="role role4"></div>
+
+        </div>
+
+    </body>
+</html>
